@@ -14,7 +14,7 @@ public class Rome extends NumberSystem {
         super(intValue);
     }
 
-    private static String convertArabicToRome(int value) {
+    public static String convertArabicToRome(int value) {
         if (value > arabic[arabic.length - 1]) {
             throw new CalcException(String.format("Поддерживаются римские цифры только до %s (%s)", rome[rome.length - 1], arabic[arabic.length - 1]));
         }
@@ -55,7 +55,7 @@ public class Rome extends NumberSystem {
         }
     }
 
-    private static int convertRomeToArabic(String num) {
+    public static int convertRomeToArabic(String num) {
         String[] numArr = num.toUpperCase().split("");
         int arabicNum = 0;
         int prevArabicNum = 0;

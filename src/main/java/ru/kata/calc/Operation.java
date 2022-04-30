@@ -1,6 +1,6 @@
 package ru.kata.calc;
 
-public enum Operation {
+enum Operation {
     division("/"),
     multiplication("*"),
     addition("+"),

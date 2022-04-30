@@ -33,17 +33,17 @@ public abstract class NumberSystem {
     }
 
     public NumberSystem doDivision(NumberSystem param) {
-        int res = getIntValue() + param.getIntValue();
+        int res = getIntValue() / param.getIntValue();
         return inctanceOf(res);
     }
 
     public NumberSystem doMultiplication(NumberSystem param) {
-        int res = getIntValue() + param.getIntValue();
+        int res = getIntValue() * param.getIntValue();
         return inctanceOf(res);
     }
 
     public NumberSystem doSubtraction(NumberSystem param) {
-        int res = getIntValue() + param.getIntValue();
+        int res = getIntValue() - param.getIntValue();
         return inctanceOf(res);
     }
 }
